@@ -4,22 +4,22 @@ var ballSize = 50
 var count = 0
 
 function setup() {
-    createCanvas(800, 600)
-    textAlign(CENTER)
-    textSize(30)
+ createCanvas(800, 600)
+ textAlign(CENTER)
+ textSize(30)
 
-  }
+}
 
 function draw() {
   background(225);
 
   levelOne();
-  text(("CHASE THE BALL"),width/2,50);
+  text(("CHASE THE BALL!"),width/2,50);
   text(("Count: " + count),width/2,80);
 }
 
 function levelOne(){
-  var distToBall = dist(ballx,bally,mouseX,mouseY);
+  var distToBall = dist(ballx, bally, mouseX, mouseY);
   if(distToBall <ballSize/2){
     ballx = random(width);
     bally = random(height);
