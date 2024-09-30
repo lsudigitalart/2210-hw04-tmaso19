@@ -2,6 +2,7 @@ var ballx = 300
 var bally = 300
 var ballSize = 50
 var count = 0
+var timer = 10;
 
 function setup() {
  createCanvas(800, 600)
@@ -16,7 +17,14 @@ function draw() {
   levelOne();
   text(("CHASE THE BALL!"),width/2,50);
   text(("Count: " + count),width/2,80);
+
+ if(frameCount % 60 == 0) {
+  timer--;
 }
+
+ if(timer < 0) {
+text("Game Over", width/2, height/);
+ }
 
 function levelOne(){
   var distToBall = dist(ballx, bally, mouseX, mouseY);
