@@ -23,7 +23,7 @@ function draw() {
 }
 
  if(timer < 0) {
-text("Game Over", width/2, height/);
+text("Game Over", width/2, height/2);
  }
 
 function levelOne(){
