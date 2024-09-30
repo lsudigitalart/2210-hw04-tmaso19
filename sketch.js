@@ -31,15 +31,22 @@ function levelOne(){
   }
   if(count> 10){
     background(255, 77, 0);
+   ballSize = ballSize -5;
   }
   if(count> 15){
     background(255, 116, 0);
+      ballSize = ballSize -5;
+
   }
   if(count> 20){
     background(255, 167, 0);
+      ballSize = ballSize -5;
+
   }
   if(count> 25){
     background(255, 225, 0);
+      ballSize = ballSize -5;
+
   }
   if(count> 30){
     background(128,255,0);
